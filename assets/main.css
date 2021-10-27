@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: relative;
+}
+
+#header .nav {
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    position: fixed;
+    z-index: 1;
+}
+
+#header .navbar {
+    display: inline-block;
+    /* float: right; */
+}
+
+#header .img-logo {
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    margin-left: 12px;
+}
+
+#header .navbar li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    padding: 22px; 
+    font-weight: 600;
+}
+
+#header .navbar li:hover {
+    cursor: pointer;
+    animation: lihover ease 2s;
+}
+
+@keyframes lihover {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#header .navbar .buy-class {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 40px;
+}
+
+.navbar .buy-class:hover{
+    animation: lihover ease .5s;
+    cursor: pointer;
+}
+
+#header .navbar .ti-angle-down {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#header .navbar .subnav {
+    display: none;
+    width: 150px;
+    border-top: 2px solid rgb(170, 210, 54);
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    margin-right: 430px;
+    margin-top: 5px;
+}
+
+.navbar .subnav li {
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+.navbar .subnav li:hover {
+    cursor: pointer;
+}
+
+#header .dropdown:hover .subnav {
+    display: block;
+}
+
+#main {
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    background-size: 100% 105%;
+    height: 750px;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+
+#main .main-heading h1 {
+    font-size: 45px;
+    font-weight: 750;
+    letter-spacing: 8.8px;
+    line-height: .5;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* position: absolute; */
+    
+}
+
+#main .main-heading {
+    position: absolute;
+    top: 50%;
+    left: 10%;  
+}
+
+
+#main .main-heading .head-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #8b8b99;
+    margin-top: 20px;
+    padding: 16px;
+    text-align: center;
+}
+
+#main1 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+#step1 {
+    background-color: #5acda6;
+    height: 400px;
+    text-align: center;
+    width: 25%;
+    height: 500px;
+}
+
+#step2 {
+    background-color: #91ac41;
+    height: 400px;
+    text-align: center;
+    width: 25%;
+    height: 500px;
+}
+
+#step3 {
+    background-color: #e4b476;
+    height: 400px;
+    text-align: center;
+    width: 25%;
+    height: 500px;
+}
+
+#step4 {
+    background-color: #f69dad;
+    height: 400px;
+    text-align: center;
+    width: 25%;
+    height: 500px;
+}
+
+#icon {
+    font-size: 96px;
+    color: white;
+    width: 96px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+#icon:hover {
+    transform: scale(1.2);
+}
+
+.step-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin: 24px 0;
+}
+
+.step-desc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+#main3 {
+    background-color: #f7eee2;
+    height: 720px;
+    width: 100%;
+    text-align: center;
+    margin-top: -35px;
+}
+
+#fresh-food-test{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+    padding-top: 60px;
+}
+
+#heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0;
+}
+
+#main3-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 16px 0;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+
+.store-item {
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+
+.icon-wrapper{
+    display: inline-block;
+    background-color: #e3b375;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.store-item:hover .icon-wrapper {
+    transform: scale(1.1, 1.1);
+}
+
+.store-item p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #8b8b99;
+    line-height: 25px;
+}
+
+#main4 {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#main4-heading {
+    color: #91ac41;
+    font-size: 18px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+}
+
+#main4 h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+}
+
+#main4-desc{
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+#main4-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main4-item{
+    width: 33.333%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+
+.main4-item img{
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.main4-item .img-desc{
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.main4-item .main4-name{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.main4-item .name-desc{
+    font-size: 14px;
+    font-style: italic;
+    color: #8b8b99;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+#main5{
+    display: flex;
+    justify-content: stretch;
+}
+
+#left-main5{
+    width: 67.33%;
+}
+
+#left-main5 img{
+    width:100%;
+    height: 100%;
+}
+
+#right-main5{
+    width: 33.67%;
+    margin: 0;
+    display: inline-block;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-position: left;
+    background-size: cover;
+}
+
+#text-wrapper{
+    margin: 115px;
+}
+
+#text-wrapper h5{
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+#text-wrapper p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 800;
+}
+
+#subcribe-email{
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin: 20px 0;
+    display: block;
+}
+
+#subcribe-btn{
+    background-color: #f1002c;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+#subcribe-btn:hover{
+    opacity: 0.8;
+    animation: lihover ease 2s;
+}
+
+#main6{
+    width: 100%;
+    background-color: #edfdf8;
+}
+
+#main6-wrapper {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main6-item{
+    width: 25%;
+}
+
+#main6-item h5{
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+.main6-desc{
+    color: #57e3b5;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+    font-weight: 850;
+}
+
+#main7{
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-size: 100% 105%;
+    height: 750px;
+    background-repeat: no-repeat;
+}
+
+#main7-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+
+#main7-wrapper > #left-address-wrapper{
+    width: 50%;
+}
+
+#main7-wrapper > #right-address-wrapper:last-of-type{
+    width: 40%;
+}
+
+.contact-heading{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.address-heading{
+    font-size: 44px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.main7-heading-desc{
+    font-size: 16px;
+    font-weight: 700;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.london-heading{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.address-lines{
+    font-size: 16px;
+    font-weight: 700;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.berlin-heading{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.input-box{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#submit-btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    animation: lihover ease 2s;
+}
+
+form{
+    margin-top: 16px;
+}
+
+#footer{
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
